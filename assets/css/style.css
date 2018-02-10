@@ -1,0 +1,331 @@
+/* Styles body of page */
+body {
+  background-image: url("../images/stardust.png");
+  background-attachment: fixed;
+  font-family: 'Arial', 'Helvetica Neue', Helvetica, sans-serif;
+  color: #777777;
+}
+
+/* Styles name in header. Sets color to white, padding, border, etc. */
+h1 {
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  color: white;
+  font-size: 36px;
+  font-weight: bolder;
+  float: left;
+  background-color: cadetblue;
+  text-align: center;
+  padding: 32px 30px;
+  margin-left: 80px;
+}
+
+/* Styles name in header */
+h1 a {
+  text-decoration: none;
+  color: white;
+}
+
+/* Floats nav right, spaces it out */
+nav {
+  float: right;
+  margin: 38px 120px 38px 0px;
+  font-size: 24px;
+}
+
+nav a {
+  text-decoration: none;
+  color:#777;
+}
+
+/* Changes nav links color on hover */
+nav a:hover {
+  color: #46B771
+}
+
+/* Spaces nav list items, sets borders on left and right */
+nav li {
+  float: left;
+  text-align: center;
+  border-right: solid grey .5px;
+  border-left: solid grey .5px;
+  padding: 0 25px;
+}
+
+/* Styles heading in each main content division */
+h2 {
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  font-weight: bolder;
+  font-size: 28px;
+  margin: 10px 20px;
+  padding: 20px 0px;
+  border-bottom: solid lightgray 3px;
+}
+
+/* Styles p elements on index.html and in footer */
+p {
+  padding: 16px 20px;
+  line-height: 2em;
+}
+
+/* Main styling for aside. Sets spacing, color, size, etc. */
+aside {
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  width: 270px;
+  height: 170px;
+  float: right;
+  margin-top: 50px;
+}
+
+/* Styles heading in the aside element on each page */
+h3 {
+  font-family: 'Georgia', Times, Times New Roman, serif;
+  font-size: 24px;
+  font-weight: bolder;
+  text-align: center;
+  margin: 10px 20px;
+  padding: 20px 0px 10px 0px;
+  border-bottom: solid lightgray 2px;
+}
+
+/* Sets styles for the list containing social media link icons */
+aside ul {
+  margin: 0 auto;
+  text-align: center;
+  padding-left: 35px;
+  padding-top: 10px;
+}
+
+/* Spaces out individual icons */
+aside li {
+  float: left;
+  text-align: center;
+  padding-right: 10px;
+
+}
+
+/* Clears floats after aside element */
+aside::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* Clears floats before footer element */
+footer::before {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* Main footer styling element */
+footer {
+  text-align: center;
+  color: white;
+  background-color: #666666;
+  margin-top: -50px;
+  padding-top: 20px;
+  height: 80px;
+  border-top: solid cadetblue 12px;
+}
+
+/* Styling for header element */
+.header {
+  height: 100px;
+  background-color: #ffffff;
+  border-bottom: 4px solid #cccccc;
+}
+
+/* Clears float after header */
+.header::after {
+  content: "";
+  display: block;
+  clear: both;
+}
+
+/* Styles content div that contains main and aside */
+.content {
+  width: 960px;
+  height: 1000px;
+  margin: 0 auto;
+  padding-bottom: 50px;
+}
+
+/* Specifically styles portfolio page content div */
+.content-portfolio {
+  width: 960px;
+  height: 900px;
+  margin: 0 auto;
+}
+
+/* Sets main styling for .main div */
+.main {
+  float: left;
+  background-color: #ffffff;
+  border: 1px solid #dddddd;
+  border-radius: 10px;
+  margin: 50px 0px;
+  width: 650px;
+}
+
+/* Sets spacing and size on image element */
+.main-article img {
+  float: left;
+  width: 200px;
+  margin: 20px 20px 20px 25px;
+  border-radius: 20px;
+}
+
+/* Styles form on contact page */
+.contact-form {
+  margin: 15px 20px;
+  font-size: 1.2em;
+}
+
+/* Sets padding for contact-form headings */
+.contact-form h4 {
+  padding-top: 15px;
+  padding-bottom: 5px;
+}
+
+/* Sets text input elements to take up available space in the contact-form */
+.contact-form input[type=text] {
+  width: 600px;
+}
+
+/* Styles submit button on contact-form on the contact page */
+.contact-form input[type=submit] {
+  width: 120px;
+  height: 40px;
+  background-color: cadetblue;
+  font-size: 18px;
+  color: white;
+  border-radius: 2px;
+}
+
+/* Spaces table on portfolio page that contains portfolio elements */
+.portfolio-table {
+  margin: 10px -15px;
+}
+
+/* Sets margin top for table */
+.portfolio-table table {
+  margin-top: 30px;
+}
+
+/* Sets spacing and margins for each portfolio element in table */
+.portfolio-table td {
+  float: left;
+  text-align: center;
+  height: 180px;
+  width: 250px;
+  margin-left: 60px;
+  margin-bottom: 40px;
+  background-color: blue;
+}
+
+/* Styles portfolio table header */
+.portfolio-table h4 {
+  text-align: center;
+  color: white;
+  padding: 11px 0 8px 0;
+  font-size: 24px;
+  position: relative;
+  top: 120px;
+  width: 100%;
+  height: 30px;
+  background-color: cadetblue;
+}
+
+
+/* Media Queries */
+@media screen and (max-width: 980px) {
+  .content {
+    width: 768px;
+    height: 900px;
+  }
+  .main {
+    width: 500px;
+  }
+  aside {
+    width: 200px;
+    height: 250px;
+    margin-left: 20px;
+  }
+  .header {
+    height: 80px;
+  }
+  .header h1 {
+    font-size: 1.5em;
+    margin-left: 0px;
+  }
+  nav {
+    margin-right: 30px;
+    font-size: 1em;
+  }
+  .contact-form input[type=text] {
+    width: 100%;
+  }
+  #textarea {
+    width: 100%;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  .content {
+    height: 1200px;
+  }
+  .main {
+    width: 80%;
+    margin: 30px 0px 30px 30px;
+  }
+  aside {
+    margin: 0 0 0 30px;
+    width: 80%;
+    float: left;
+  }
+  .portfolio-table td {
+    margin-left: 30px;
+    width: 30%;
+  }
+
+
+}
+
+@media screen and (max-width: 640px) {
+  .content {
+    width: 100%;
+    height: 1850px;
+  }
+  .header h1 {
+    width: 100%;
+    text-align: center;
+  }
+  .main-article img {
+    width: 80%;
+  }
+  .main-article p::before {
+    content: "";
+    display: block;
+    clear: both;
+  }
+  nav {
+    background-color: #ffffff;
+    margin: 0;
+    width: 100%;
+    height: 50px;
+  }
+  nav li {
+    text-align: center;
+    width: 33%;
+    padding: 17px 0;
+    margin-bottom: 0;
+  }
+  aside {
+    float: left;
+    width: 80%;
+    margin: 0 30px;
+  }
+
+}
